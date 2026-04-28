@@ -45,3 +45,5 @@ Raw Morse:
 
 ```text
 ... --- ... / ... --- ...
+
+Translates to : SOS SOS
