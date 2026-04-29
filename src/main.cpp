@@ -222,16 +222,20 @@ void playCurrentMorse()
 
     if (symbol == '.')
     {
-      ledcWriteTone(0, 1000); // Dot: 1 unit of tone
+      digitalWrite(LED_PIN, HIGH);
+      ledcWriteTone(0, 1000);
       delay(TIME_UNIT);
       ledcWrite(0, 0);
+      digitalWrite(LED_PIN, LOW);
     }
 
     else if (symbol == '-')
     {
-      ledcWriteTone(0, 1000); // Dash: 3 units of tone
+      digitalWrite(LED_PIN, HIGH);
+      ledcWriteTone(0, 1000);
       delay(3 * TIME_UNIT);
       ledcWrite(0, 0);
+      digitalWrite(LED_PIN, LOW);
     }
 
     else if (symbol == '/')
